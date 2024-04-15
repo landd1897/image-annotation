@@ -3,7 +3,7 @@
 		<h1 style="text-align: center">一个基于Farbic.js的在线图片标注组件</h1>
 		<Row :gutter="20">
 			<Col :span="20">
-				<Annotation ref="myTagging" style="width: 100%" img-src="http://www.news.cn/photo/20240410/747c2e6e95ec4b9f9d9e437bbe91ab2a/20240410747c2e6e95ec4b9f9d9e437bbe91ab2a_202404103ec0b250e00a47b09dcff8e010a5c6f5.jpg" />
+				<Annotation ref="myTagging" style="width: 100%" img-src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png?x-oss-process=image/blur,r_50,s_50/quality,q_1/resize,m_mfit,h_200,w_200" />
 			</Col>
 			<Col :span="4">
 				<div style="text-align: center">
@@ -12,7 +12,10 @@
 						<Radio :style="radioStyle" value="polygn">多边形标注</Radio>
 					</RadioGroup>
 					<p style="margin-top: 50px">
-						<a-button type="primary" @click="chooseLabel({ id: 1, name: 'test标注' })"> 使用test标注 </a-button>
+						<a-button type="primary" @click="chooseLabel({ id: 1, name: 'test标注' })"> test标注 </a-button>
+					</p>
+					<p style="text-align: left; word-break: break-all">
+						<span>提示：<br /><br />点击[test标注]按钮再点击图片测试标注。<br /><br />原业务需求标签和标注唯一，所以在只有'test标注'标签的情况下只能有一个标注。测试标注时如果已有标注，删除了重新标注就行。</span>
 					</p>
 				</div>
 			</Col>
